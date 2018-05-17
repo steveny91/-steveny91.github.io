@@ -95,7 +95,7 @@ function initializeScripts(){
   window.ga('set', 'page', window.location.pathname);
   window.ga('send', 'pageview');
   
-  if(urlString === 'http://localhost:4000/' || urlString === 'https://levytsroman.github.io/'){
+  if(urlString === 'http://localhost:4000/' || urlString === 'https://steveny91.github.io/'){
     Barba.Pjax.getTransition = function() {
       return HideShowTransition;
     };
