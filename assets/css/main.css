@@ -37,13 +37,13 @@
   background-image: url("../images/me.jpg"); }
 
 .projects__bkgrnd {
-  background-image: url("../images/projects.jpg"); }
+  background-image: url("../images/k.jpg"); }
 
 .algorithms__bkgrnd {
-  background-image: url("../images/resume.jpg"); }
+  background-image: url("../images/resume.html.jpg"); }
 
 .contact__bkgrnd {
-  background-image: url("../images/contact.jpg"); }
+  background-image: url("../images/contact.html.jpg"); }
 
 .glitch__img:nth-child(n + 2) {
   opacity: 0; }
@@ -303,7 +303,8 @@
   #homepage .projects {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
-    background-image: url("/assets/images/projects.jpg");
+    background-image: url("/assets/images/k.jpg");
+    background-position: center;
     background-size: cover; }
   #homepage .projects:hover {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
@@ -314,13 +315,13 @@
   #homepage .algorithms {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
-    background-image: url("/assets/images/resume.jpg");
+    background-image: url("/assets/images/resume.html.jpg");
     background-size: cover; }
   #homepage .algorithms:hover {
     background-color: #443c72;
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact {
-    background-image: url("/assets/images/contact.jpg");
+    background-image: url("/assets/images/contact.html.jpg");
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
     background-size: cover; }
@@ -526,6 +527,28 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
+nav.z-depth-0 {
+  background-color: #254b84; }
+
+.quote_box.row {
+  max-width: 1300px; }
+
+.container.about_section {
+  max-width: 1300px;
+  padding: 0 5% 0 5%; }
+
+.skill_group {
+  text-align: center; }
+
+.skills {
+  text-align: left; }
+
+h4.heading {
+  /* table-layout: auto; */
+  border: 1px solid #254b84;
+  background-color: #254b84;
+  color: white; }
+
 .about_section .skills_wrapper {
   display: flex;
   flex-direction: row;
@@ -535,24 +558,23 @@ i {
   width: 30%; }
 
 .my_footer {
-  background-color: #292929;
+  background-color: #254b84;
   margin-top: 40px; }
 
 .resume-wrapper button {
   margin-top: 50px; }
 
 body {
-  background-color: #fcf5c7;
+  background-color: white;
   min-height: 100%;
   min-width: 300px; }
 
 nav {
-  margin-top: 40px;
   margin-bottom: 100px; }
 
 nav ul li a {
   font-weight: 600;
-  color: black; }
+  color: white; }
 
 .projects_container {
   padding: 20px 10px 0 10px;
@@ -568,10 +590,10 @@ nav ul li {
   background-color: transparent !important; }
 
 .nav-underline {
-  margin: 0 25px 0 25px;
+  margin: -22px 25px 0 25px;
   width: 0%;
   height: 3px;
-  background-color: black;
+  background-color: white;
   transition: width 0.3s; }
 
 .nav-underlined,
@@ -579,7 +601,7 @@ nav ul li {
   width: 30%; }
 
 .heading {
-  color: #292929;
+  color: #254b84;
   font-weight: 200px;
   font-size: 2.3rem;
   font-family: "Josefin Slab", serif; }
@@ -615,13 +637,12 @@ nav ul li {
 
 .skill_names {
   font-size: 1.5rem;
-  color: #292929;
+  color: #254b84;
   font-style: "Raleway", sans-serif;
   font-weight: 200;
   margin-left: 10px; }
 
 .my_container {
-  max-width: 1300px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -669,18 +690,25 @@ nav ul li {
 .about_me_links {
   color: black;
   font-weight: 200;
-  font-style: italic; }
+  font-style: italic;
+  text-decoration: underline; }
+
+i.material-icons.prefix {
+  color: #254b84; }
 
 .about_me_links:hover {
   font-weight: 300; }
 
 #email_modal {
-  background-color: #292929;
+  background-color: #254b84;
   color: #fcf5c7; }
+
+.about_paragraph {
+  color: #254b84; }
 
 .project_list .modal,
 .project_list .modal-footer {
-  background-color: #292929; }
+  background-color: #254b84; }
 .project_list .project_info {
   padding: 1%;
   padding-top: 20px; }
@@ -746,8 +774,8 @@ button {
   width: 100%;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: #292929;
-  border: 1px #292929 solid !important;
+  color: #254b84;
+  border: 1px #254b84 solid !important;
   border-radius: 3px;
   outline: 0;
   overflow: hidden;
@@ -769,12 +797,12 @@ button:focus {
 
 button.fill:hover {
   background-color: transparent;
-  color: #f9f0ae; }
+  color: white; }
 
 button.fill:before {
   content: "";
   position: absolute;
-  background: #292929;
+  background: #254b84;
   bottom: 0;
   left: 0;
   right: 0;
@@ -783,7 +811,7 @@ button.fill:before {
   -webkit-transition: top 0.09s ease-in; }
 
 .buttons button.fill:hover {
-  color: #292929; }
+  color: #254b84; }
 
 .buttons button.fill:before {
   background: #fcf5c7; }
@@ -799,7 +827,7 @@ button.fill:hover:before {
   font-size: 1.1rem; }
 
 .cover {
-  background-color: #f9f0ae;
+  background-color: #254b84;
   width: 40%;
   height: 100%;
   margin: 0;
@@ -821,7 +849,7 @@ button.fill:hover:before {
   font-size: 1.5rem; }
 
 .about_skill_icon {
-  color: #292929;
+  color: #254b84;
   font-size: 1.5rem; }
 
 .box {
@@ -833,7 +861,7 @@ button.fill:hover:before {
   height: 0px;
   width: 0px;
   position: absolute;
-  background-color: #fcf5c7; }
+  background-color: white; }
 
 .about-border {
   bottom: 0px;
@@ -864,16 +892,16 @@ button.fill:hover:before {
 
 /* label color */
 .input-field label {
-  color: #292929 !important; }
+  color: #254b84 !important; }
 
 /* label focus color */
 .input-field input:focus + label {
-  color: #292929 !important; }
+  color: #254b84 !important; }
 
 /* label underline focus color */
 .input-field input:focus {
-  border-bottom: 1px solid #292929 !important;
-  box-shadow: 0 1px 0 0 #292929 !important; }
+  border-bottom: 1px solid #254b84 !important;
+  box-shadow: 0 1px 0 0 #254b84 !important; }
 
 /* valid color */
 .input-field input.valid {
@@ -887,12 +915,12 @@ button.fill:hover:before {
 
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #292929 !important; }
+  color: #254b84 !important; }
 
 textarea:focus {
   outline: none !important;
-  border-bottom: 1px solid #292929 !important;
-  box-shadow: 0 1px 0 0 #292929 !important; }
+  border-bottom: 1px solid #254b84 !important;
+  box-shadow: 0 1px 0 0 #254b84 !important; }
 
 nav,
 nav .nav-wrapper i,
@@ -931,5 +959,10 @@ nav a.button-collapse i {
 
   .about_section .skill_group {
     width: 50%; } }
+a.footer_description_link {
+  text-decoration: underline; }
+
+.project.row {
+  max-width: 1300px; }
 
 /*# sourceMappingURL=main.css.map */
