@@ -40,10 +40,10 @@
   background-image: url("../images/k.jpg"); }
 
 .algorithms__bkgrnd {
-  background-image: url("../images/resume.html.jpg"); }
+  background-image: url("../images/resume.jpg"); }
 
 .contact__bkgrnd {
-  background-image: url("../images/contact.html.jpg"); }
+  background-image: url("../images/contact.jpg"); }
 
 .glitch__img:nth-child(n + 2) {
   opacity: 0; }
@@ -315,13 +315,13 @@
   #homepage .algorithms {
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
-    background-image: url("/assets/images/resume.html.jpg");
+    background-image: url("/assets/images/resume.jpg");
     background-size: cover; }
   #homepage .algorithms:hover {
     background-color: #443c72;
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact {
-    background-image: url("/assets/images/contact.html.jpg");
+    background-image: url("/assets/images/contact.jpg");
     box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
     transition: box-shadow 0.5s linear;
     background-size: cover; }
