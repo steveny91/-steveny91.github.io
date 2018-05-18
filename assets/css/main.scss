@@ -13,10 +13,10 @@ $text-color: #eff2ef;
 
 $modal-text: #fcf5c7;
 
-$dark-grey: #292929;
-$background-color: #fcf5c7;
+$dark-blue: #254b84;
+$background-color: white;
 
-$cover-color: #f9f0ae;
+$cover-color: #254b84;
 
 @import "glitch", "homepage", "style";
 
@@ -34,7 +34,7 @@ $cover-color: #f9f0ae;
 }
 
 .my_footer {
-  background-color: $dark-grey;
+  background-color: $dark-blue;
   margin-top: 40px;
 }
 
@@ -50,13 +50,13 @@ body {
 }
 
 nav {
-  margin-top: 40px;
+  // margin-top: 40px;
   margin-bottom: 100px;
 }
 
 nav ul li a {
   font-weight: 600;
-  color: black;
+  color: white;
 }
 
 .projects_container {
@@ -76,10 +76,10 @@ nav ul li {
 }
 
 .nav-underline {
-  margin: 0 25px 0 25px;
+  margin: -22px 25px 0 25px;
   width: 0%;
   height: 3px;
-  background-color: black;
+  background-color: white;
   transition: width 0.3s;
 }
 
@@ -89,7 +89,7 @@ nav ul li {
 }
 
 .heading {
-  color: $dark-grey;
+  color: $dark-blue;
   font-weight: 200px;
   font-size: 2.3rem;
   font-family: $font1;
@@ -132,14 +132,14 @@ nav ul li {
 
 .skill_names {
   font-size: 1.5rem;
-  color: $dark-grey;
+  color: $dark-blue;
   font-style: $font2;
   font-weight: 200;
   margin-left: 10px;
 }
 
 .my_container {
-  max-width: 1300px;
+  // max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -199,6 +199,11 @@ nav ul li {
   color: black;
   font-weight: 200;
   font-style: italic;
+  text-decoration: underline
+}
+
+i.material-icons.prefix{
+  color: $dark-blue;
 }
 
 .about_me_links:hover {
@@ -206,14 +211,18 @@ nav ul li {
 }
 
 #email_modal {
-  background-color: $dark-grey;
+  background-color: $dark-blue;
   color: $modal-text;
+}
+
+.about_paragraph{
+  color: $dark-blue;
 }
 
 .project_list {
   .modal,
   .modal-footer {
-    background-color: $dark-grey;
+    background-color: $dark-blue;
   }
   .project_info {
     padding: 1%;
@@ -301,8 +310,8 @@ button {
   width: 100%;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: $dark-grey;
-  border: 1px $dark-grey solid !important;
+  color: $dark-blue;
+  border: 1px $dark-blue solid !important;
   border-radius: 3px;
   outline: 0;
   overflow: hidden;
@@ -327,13 +336,13 @@ button:focus {
 
 button.fill:hover {
   background-color: transparent;
-  color: $cover-color;
+  color: white;
 }
 
 button.fill:before {
   content: "";
   position: absolute;
-  background: $dark-grey;
+  background: $dark-blue;
   bottom: 0;
   left: 0;
   right: 0;
@@ -343,7 +352,7 @@ button.fill:before {
 }
 
 .buttons button.fill:hover {
-  color: $dark-grey;
+  color: $dark-blue;
 }
 
 .buttons button.fill:before {
@@ -389,7 +398,7 @@ button.fill:hover:before {
 }
 
 .about_skill_icon {
-  color: $dark-grey;
+  color: $dark-blue;
   font-size: 1.5rem;
 }
 .box {
@@ -440,16 +449,16 @@ button.fill:hover:before {
 
 /* label color */
 .input-field label {
-  color: $dark-grey !important;
+  color: $dark-blue !important;
 }
 /* label focus color */
 .input-field input:focus + label {
-  color: $dark-grey !important;
+  color: $dark-blue !important;
 }
 /* label underline focus color */
 .input-field input:focus {
-  border-bottom: 1px solid $dark-grey !important;
-  box-shadow: 0 1px 0 0 $dark-grey !important;
+  border-bottom: 1px solid $dark-blue !important;
+  box-shadow: 0 1px 0 0 $dark-blue !important;
 }
 /* valid color */
 .input-field input.valid {
@@ -463,12 +472,12 @@ button.fill:hover:before {
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: $dark-grey !important;
+  color: $dark-blue !important;
 }
 textarea:focus {
   outline: none !important;
-  border-bottom: 1px solid $dark-grey !important;
-  box-shadow: 0 1px 0 0 $dark-grey !important;
+  border-bottom: 1px solid $dark-blue !important;
+  box-shadow: 0 1px 0 0 $dark-blue !important;
 }
 
 nav,
@@ -520,4 +529,12 @@ nav a.button-collapse i {
       width: 50%;
     }
   }
+}
+
+a.footer_description_link {
+  text-decoration: underline
+}
+
+.project.row {
+  max-width: 1300px;
 }

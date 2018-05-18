@@ -231,3 +231,29 @@ i {
 .back-link:hover {
   text-decoration: underline;
 }
+
+nav.z-depth-0 {background-color: #254b84;}
+
+.quote_box.row {
+  max-width: 1300px;
+}
+
+.container.about_section {
+  max-width: 1300px;
+  padding: 0 5% 0 5%;
+}
+
+.skill_group {
+  text-align: center;
+}
+
+.skills {
+  text-align: left;
+}
+
+h4.heading {
+  /* table-layout: auto; */
+  border: 1px solid #254b84;
+  background-color: #254b84;
+  color: white;
+}

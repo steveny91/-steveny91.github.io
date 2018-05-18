@@ -40,15 +40,15 @@
 }
 
 .projects__bkgrnd {
-  background-image: url("../images/projects.jpg");
+  background-image: url("../images/k.jpg");
 }
 
 .algorithms__bkgrnd {
-  background-image: url("../images/resume.jpg");
+  background-image: url("../images/resume.html.jpg");
 }
 
 .contact__bkgrnd {
-  background-image: url("../images/contact.jpg");
+  background-image: url("../images/contact.html.jpg");
 }
 
 .glitch__img:nth-child(n + 2) {
@@ -370,3 +370,240 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+// .glitch {
+//   color: white;
+//   animation: noise-zoom 1s infinite linear alternate-reverse;
+// }
+
+// @keyframes noise-zoom {
+//   0% {
+//     transform: scale(0.96);
+//   }
+//   10% {
+//     transform: scale(0.99);
+//   }
+//   20% {
+//     transform: scale(0.99) skew(-1deg, 0);
+//   }
+//   30% {
+//     transform: scale(0.98);
+//   }
+//   40% {
+//     transform: scale(0.98);
+//   }
+//   50% {
+//     transform: scale(0.99);
+//   }
+//   60% {
+//     transform: scale(0.98);
+//   }
+//   70% {
+//     transform: scale(0.99);
+//   }
+//   80% {
+//     transform: scale(0.98);
+//     transform: scale(0.99) skew(-random(10)deg, 0);
+//   }
+//   90% {
+//     transform: scale(0.98);
+//   }
+// }
+// @keyframes noise-anim {
+//   0% {
+//     clip: rect(9px, 9999px, 88px, 0);
+//     text-shadow: -8px -2px 40px rgba(255, 255, 255, 0.8);
+//   }
+//   5% {
+//     clip: rect(51px, 9999px, 52px, 0);
+//     text-shadow: 4px 7px 29px rgba(255, 255, 255, 0.8);
+//   }
+//   10% {
+//     clip: rect(80px, 9999px, 28px, 0);
+//     text-shadow: 1px -8px 36px rgba(255, 255, 255, 0.8);
+//   }
+//   15% {
+//     clip: rect(49px, 9999px, 36px, 0);
+//     text-shadow: 8px -3px 22px rgba(255, 255, 255, 0.8);
+//   }
+//   20% {
+//     clip: rect(21px, 9999px, 40px, 0);
+//     text-shadow: 6px 1px 13px rgba(255, 255, 255, 0.8);
+//   }
+//   25% {
+//     clip: rect(100px, 9999px, 50px, 0);
+//     text-shadow: -2px -9px 39px rgba(255, 255, 255, 0.8);
+//   }
+//   30% {
+//     clip: rect(26px, 9999px, 24px, 0);
+//     text-shadow: 2px 5px 1px rgba(255, 255, 255, 0.8);
+//   }
+//   35% {
+//     clip: rect(74px, 9999px, 88px, 0);
+//     text-shadow: 0px -3px 28px rgba(255, 255, 255, 0.8);
+//   }
+//   40% {
+//     clip: rect(27px, 9999px, 32px, 0);
+//     text-shadow: -7px 1px 7px rgba(255, 255, 255, 0.8);
+//   }
+//   45% {
+//     clip: rect(53px, 9999px, 3px, 0);
+//     text-shadow: -6px 2px 22px rgba(255, 255, 255, 0.8);
+//   }
+//   50% {
+//     clip: rect(61px, 9999px, 86px, 0);
+//     text-shadow: -3px -8px 21px rgba(255, 255, 255, 0.8);
+//   }
+//   55% {
+//     clip: rect(53px, 9999px, 88px, 0);
+//     text-shadow: 0px -4px 17px rgba(255, 255, 255, 0.8);
+//   }
+//   60% {
+//     clip: rect(82px, 9999px, 56px, 0);
+//     text-shadow: 7px 1px 21px rgba(255, 255, 255, 0.8);
+//   }
+//   65% {
+//     clip: rect(31px, 9999px, 62px, 0);
+//     text-shadow: -5px 5px 34px rgba(255, 255, 255, 0.8);
+//   }
+//   70% {
+//     clip: rect(87px, 9999px, 89px, 0);
+//     text-shadow: -4px -9px 7px rgba(255, 255, 255, 0.8);
+//   }
+//   75% {
+//     clip: rect(23px, 9999px, 32px, 0);
+//     text-shadow: -5px -3px 4px rgba(255, 255, 255, 0.8);
+//   }
+//   80% {
+//     clip: rect(36px, 9999px, 50px, 0);
+//     text-shadow: -1px 0px 35px rgba(255, 255, 255, 0.8);
+//   }
+//   85% {
+//     clip: rect(76px, 9999px, 73px, 0);
+//     text-shadow: 2px 6px 14px rgba(255, 255, 255, 0.8);
+//   }
+//   90% {
+//     clip: rect(76px, 9999px, 28px, 0);
+//     text-shadow: 4px -7px 32px rgba(255, 255, 255, 0.8);
+//   }
+//   95% {
+//     clip: rect(63px, 9999px, 1px, 0);
+//     text-shadow: 7px -5px 30px rgba(255, 255, 255, 0.8);
+//   }
+//   100% {
+//     clip: rect(41px, 9999px, 85px, 0);
+//     text-shadow: 1px -4px 26px rgba(255, 255, 255, 0.8);
+//   }
+// }
+// .glitch:after {
+//   content: attr(data-text);
+//   position: absolute;
+//   left: 2px;
+//   text-shadow: -1px 0 red;
+//   top: 0;
+//   color: white;
+//   background: black;
+//   overflow: hidden;
+//   clip: rect(0, 900px, 0, 0);
+//   animation: noise-anim 2s infinite linear alternate-reverse;
+// }
+
+// @keyframes noise-anim-2 {
+//   0% {
+//     clip: rect(55px, 9999px, 89px, 0);
+//     text-shadow: -7px -3px 31px rgba(90, 84, 11, 0.6);
+//   }
+//   5% {
+//     clip: rect(57px, 9999px, 74px, 0);
+//     text-shadow: -2px 6px 25px rgba(20, 158, 49, 0.6);
+//   }
+//   10% {
+//     clip: rect(21px, 9999px, 68px, 0);
+//     text-shadow: -8px 1px 26px rgba(68, 134, 36, 0.6);
+//   }
+//   15% {
+//     clip: rect(61px, 9999px, 20px, 0);
+//     text-shadow: 0px -4px 26px rgba(127, 181, 248, 0.6);
+//   }
+//   20% {
+//     clip: rect(10px, 9999px, 76px, 0);
+//     text-shadow: -6px -4px 6px rgba(228, 217, 103, 0.6);
+//   }
+//   25% {
+//     clip: rect(35px, 9999px, 59px, 0);
+//     text-shadow: 7px -1px 34px rgba(66, 81, 194, 0.6);
+//   }
+//   30% {
+//     clip: rect(32px, 9999px, 79px, 0);
+//     text-shadow: -3px 3px 21px rgba(166, 235, 75, 0.6);
+//   }
+//   35% {
+//     clip: rect(1px, 9999px, 34px, 0);
+//     text-shadow: 9px 10px 40px rgba(137, 16, 135, 0.6);
+//   }
+//   40% {
+//     clip: rect(27px, 9999px, 93px, 0);
+//     text-shadow: 6px 5px 23px rgba(11, 118, 68, 0.6);
+//   }
+//   45% {
+//     clip: rect(68px, 9999px, 51px, 0);
+//     text-shadow: -6px 1px 3px rgba(7, 3, 164, 0.6);
+//   }
+//   50% {
+//     clip: rect(29px, 9999px, 15px, 0);
+//     text-shadow: 2px -1px 5px rgba(100, 121, 18, 0.6);
+//   }
+//   55% {
+//     clip: rect(81px, 9999px, 52px, 0);
+//     text-shadow: 2px 9px 29px rgba(158, 21, 120, 0.6);
+//   }
+//   60% {
+//     clip: rect(11px, 9999px, 7px, 0);
+//     text-shadow: 6px 10px 31px rgba(47, 132, 213, 0.6);
+//   }
+//   65% {
+//     clip: rect(64px, 9999px, 44px, 0);
+//     text-shadow: 5px -8px 33px rgba(249, 63, 116, 0.6);
+//   }
+//   70% {
+//     clip: rect(91px, 9999px, 75px, 0);
+//     text-shadow: -6px 2px 29px rgba(4, 169, 77, 0.6);
+//   }
+//   75% {
+//     clip: rect(55px, 9999px, 73px, 0);
+//     text-shadow: 3px 1px 38px rgba(246, 101, 188, 0.6);
+//   }
+//   80% {
+//     clip: rect(59px, 9999px, 26px, 0);
+//     text-shadow: 4px 5px 13px rgba(239, 94, 9, 0.6);
+//   }
+//   85% {
+//     clip: rect(24px, 9999px, 81px, 0);
+//     text-shadow: 9px 3px 16px rgba(168, 1, 46, 0.6);
+//   }
+//   90% {
+//     clip: rect(31px, 9999px, 83px, 0);
+//     text-shadow: 4px -6px 14px rgba(80, 210, 30, 0.6);
+//   }
+//   95% {
+//     clip: rect(97px, 9999px, 55px, 0);
+//     text-shadow: -8px 9px 26px rgba(135, 211, 112, 0.6);
+//   }
+//   100% {
+//     clip: rect(37px, 9999px, 60px, 0);
+//     text-shadow: -3px -4px 38px rgba(134, 169, 151, 0.6);
+//   }
+// }
+// .glitch:before {
+//   content: attr(data-text);
+//   position: absolute;
+//   left: -2px;
+//   text-shadow: 1px 0 blue;
+//   top: 0;
+//   color: white;
+//   background: black;
+//   overflow: hidden;
+//   clip: rect(0, 900px, 0, 0);
+//   animation: noise-anim-2 3s infinite linear alternate-reverse;
+// }
+

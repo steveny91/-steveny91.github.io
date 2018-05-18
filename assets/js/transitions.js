@@ -1,9 +1,9 @@
 var HideShowTransition = Barba.BaseTransition.extend({
-  start: function() {
+  start: function () {
     this.newContainerLoading.then(this.finish.bind(this));
   },
 
-  finish: function() {
+  finish: function () {
     initializeScripts();
     document.body.scrollTop = 0;
     $("html").css("overflow-y", "hidden");
@@ -56,7 +56,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
           height: "100%"
         },
         400,
-        function() {
+        function () {
           resolve();
         }
       );
@@ -67,7 +67,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
           width: "100%"
         },
         400,
-        function() {
+        function () {
           resolve();
         }
       );
@@ -79,7 +79,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
           width: "100%"
         },
         400,
-        function() {
+        function () {
           resolve();
         }
       );
@@ -91,7 +91,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
           height: "100%"
         },
         400,
-        function() {
+        function () {
           resolve();
         }
       );
@@ -146,7 +146,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
             top: "+=" + algorithmsHeight + "px"
           },
           400,
-          function() {
+          function () {
             $(".barba-old-container").removeClass("barba-old-container");
             $(".barba-new-container").removeClass("barba-new-container");
 
@@ -172,15 +172,15 @@ var HideShowTransition = Barba.BaseTransition.extend({
 });
 
 var FadeTransition = Barba.BaseTransition.extend({
-  start: function() {
+  start: function () {
     Promise.all([this.newContainerLoading, this.fadeIn()]);
   },
 
-  fadeIn: function() {
+  fadeIn: function () {
     Promise.all([this._newContainerPromise]).then(() => {
       initializeScripts();
       if (
-        this.newContainer.baseURI === "http://localhost:4000/" ||
+        this.newContainer.baseURI === "http://localhost:5000/" ||
         this.newContainer.baseURI === "https://steveny91.github.io/"
       ) {
         $(this.newContainer).addClass("barba-new-container-back");
@@ -244,7 +244,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 top: "+=" + aboutHeight + "px"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -258,7 +258,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 top: "-=" + contactHeight + "px"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -272,7 +272,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 top: "+=" + projectsHeight + "px"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -286,7 +286,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 top: "-=" + algorithmsHeight + "px"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -328,7 +328,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 height: "0%"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -340,7 +340,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 width: "0%"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -352,7 +352,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 width: "0%"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );
@@ -364,7 +364,7 @@ var FadeTransition = Barba.BaseTransition.extend({
                 height: "0%"
               },
               400,
-              function() {
+              function () {
                 resolve();
               }
             );

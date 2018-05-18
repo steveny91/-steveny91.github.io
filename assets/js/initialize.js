@@ -1,4 +1,4 @@
-function initializeScripts(){
+function initializeScripts() {
   // $( document ).tooltip();
 
   $('.materialboxed').materialbox();
@@ -12,15 +12,15 @@ function initializeScripts(){
   //   var arrow = e.target;
   //   debugger
   // })
-  $('.email_me').submit(function(e){
+  $('.email_me').submit(function (e) {
     e.preventDefault();
 
     $.ajax({
-        url: "https://formspree.io/r.levyts@gmail.com",
-        method: "POST",
-        data: $('.email_me').serialize(),
-        dataType: "json"
-    }).done(function(res) {
+      url: "https://formspree.io/steveny905@gmail.com",
+      method: "POST",
+      data: $('.email_me').serialize(),
+      dataType: "json"
+    }).done(function (res) {
       $('.email_input').val('');
       $('.email_input').removeClass('valid');
       $('#email_modal').modal('open');
@@ -36,7 +36,7 @@ function initializeScripts(){
 
   $('#textarea1').trigger('autoresize');
 
-  $('.project_list').on('click', '.next', function(e){
+  $('.project_list').on('click', '.next', function (e) {
     e.preventDefault();
     var thisId = $(this).attr('id');
     var nextId = (parseInt(thisId) + 1).toString();
@@ -44,7 +44,7 @@ function initializeScripts(){
     $('#' + thisId).modal('close');
 
     // need to rework this to use promise rather then setTimeout
-    setTimeout(function(){
+    setTimeout(function () {
       var nextId = (parseInt(thisId) + 1).toString();
       $('#' + nextId).modal('open')
     }, 200)
@@ -59,89 +59,89 @@ function initializeScripts(){
   })
 
   $('.project_list .modal').modal({
-      dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .8, // Opacity of modal background
-      inDuration: 200, // Transition in duration
-      outDuration: 200, // Transition out duration
-      startingTop: '0%', // Starting top style attribute
-      endingTop: '0%', // Ending top style attribute
-      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-        // alert("Ready");
-        modal_open = true
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-      },
-      complete: function(e) {
-        // debugger
-      } // Callback for Modal close
-    });
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    opacity: .8, // Opacity of modal background
+    inDuration: 200, // Transition in duration
+    outDuration: 200, // Transition out duration
+    startingTop: '0%', // Starting top style attribute
+    endingTop: '0%', // Ending top style attribute
+    ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+      // alert("Ready");
+      modal_open = true
+      $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    },
+    complete: function (e) {
+      // debugger
+    } // Callback for Modal close
+  });
 
   var colors = {
-        'about': 'rgb(142,85,114)',
-        'projects': '#F46036',
-        'contact': '#fcb',
-        'resume': '#2E294E'
-      },
-      urlString = window.location.href,
-      scrollHeight = $(document).scrollTop();
+    'about': 'rgb(142,85,114)',
+    'projects': '#F46036',
+    'contact': '#fcb',
+    'resume': '#2E294E'
+  },
+    urlString = window.location.href,
+    scrollHeight = $(document).scrollTop();
 
   var pagename = ''
-  $.each(colors, function(key,val){
-    if(urlString.indexOf(key) > -1){
+  $.each(colors, function (key, val) {
+    if (urlString.indexOf(key) > -1) {
       color = val;
       pagename = key;
     }
   });
 
-  
-  if(urlString === 'http://localhost:4000/' || urlString === 'https://steveny91.github.io/'){
-    Barba.Pjax.getTransition = function() {
+
+  if (urlString === "http://localhost:5000/" || urlString === 'https://steveny91.github.io/') {
+    Barba.Pjax.getTransition = function () {
       return HideShowTransition;
     };
   } else {
-    Barba.Pjax.getTransition = function() {
+    Barba.Pjax.getTransition = function () {
       return FadeTransition;
     };
   }
 
-  if(pagename){
+  if (pagename) {
     // assignColors(pagename, color);
     $('nav a[href="/' + pagename + '"]').parent().find('div').addClass('nav-underlined');
   }
 
-  $('.tag').click(function(event){
+  $('.tag').click(function (event) {
     event.preventDefault();
 
     hideCloseIcons($(this));
 
     var button = $(this),
-        tag = $(this).attr('val'),
-        projects = $('.card'),
-        buttons = $('.btn'),
-        active_tags = [],
-        needToClearFilters = tag === "clear-filters";
+      tag = $(this).attr('val'),
+      projects = $('.card'),
+      buttons = $('.btn'),
+      active_tags = [],
+      needToClearFilters = tag === "clear-filters";
 
-    if(needToClearFilters){
+    if (needToClearFilters) {
       clearFilters();
-    } else{
+    } else {
       toggleTags(button, tag);
       active_tags = addActiveTags(buttons);
       showProjects(projects, active_tags);
     }
   })
 
-  $("nav ul li a").hover(function(e){
+  $("nav ul li a").hover(function (e) {
     $(e.target).parent().find('div').addClass('nav-hover-underlined');
-  }, function(e){
+  }, function (e) {
     $(e.target).parent().find('div').removeClass('nav-hover-underlined');
   });
 
-  $("#filter").click(function(event){
+  $("#filter").click(function (event) {
     event.preventDefault();
     var text = $('#filter').text(),
-        options = {
-          "filter": "hide filters",
-          "hide filters": "filter"
-        };
+      options = {
+        "filter": "hide filters",
+        "hide filters": "filter"
+      };
 
     $("#filter").text(options[text]);
     $("#tags").toggle(400);
@@ -149,15 +149,15 @@ function initializeScripts(){
   // debugger
   $(window).scroll(() => {
     var scrollPos = $(document).scrollTop();
-        documentHeight = $(document).height();
-    if(scrollPos/documentHeight > 0.1){
+    documentHeight = $(document).height();
+    if (scrollPos / documentHeight > 0.1) {
       $('#scroll-top').css('display', 'block');
-    }else {
+    } else {
       $('#scroll-top').css('display', 'none');
     }
   })
 
-  $('#scroll-top').click((e)=>{
+  $('#scroll-top').click((e) => {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 250);
     return false;
