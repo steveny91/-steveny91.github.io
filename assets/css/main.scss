@@ -14,7 +14,7 @@ $text-color: #eff2ef;
 $modal-text: #fcf5c7;
 
 $dark-blue: #254b84;
-$background-color: white;
+$background-color: #2C3539;
 
 $cover-color: #254b84;
 
@@ -89,7 +89,7 @@ nav ul li {
 }
 
 .heading {
-  color: $dark-blue;
+  color: white;
   font-weight: 200px;
   font-size: 2.3rem;
   font-family: $font1;
@@ -203,7 +203,7 @@ nav ul li {
 }
 
 i.material-icons.prefix{
-  color: $dark-blue;
+  color: white;
 }
 
 .about_me_links:hover {
@@ -310,8 +310,8 @@ button {
   width: 100%;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: $dark-blue;
-  border: 1px $dark-blue solid !important;
+  color: white;
+  border: 1px white solid !important;
   border-radius: 3px;
   outline: 0;
   overflow: hidden;
@@ -449,16 +449,16 @@ button.fill:hover:before {
 
 /* label color */
 .input-field label {
-  color: $dark-blue !important;
+  color: white !important;
 }
 /* label focus color */
 .input-field input:focus + label {
-  color: $dark-blue !important;
+  color: white !important;
 }
 /* label underline focus color */
 .input-field input:focus {
-  border-bottom: 1px solid $dark-blue !important;
-  box-shadow: 0 1px 0 0 $dark-blue !important;
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
 }
 /* valid color */
 .input-field input.valid {
@@ -472,12 +472,12 @@ button.fill:hover:before {
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: $dark-blue !important;
+  color: white !important;
 }
 textarea:focus {
   outline: none !important;
-  border-bottom: 1px solid $dark-blue !important;
-  box-shadow: 0 1px 0 0 $dark-blue !important;
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
 }
 
 nav,
@@ -542,4 +542,46 @@ a.footer_description_link {
 img.responsive-img.resume-img.z-depth-2.hoverable {
   display: block;
   margin: auto;
+}
+
+p.quote {
+  color: white;
+}
+
+p.author.right {
+  color: white;
+}
+
+.about_paragraph {
+  color: white;
+}
+
+a.about_me_links {
+  color: white;
+}
+
+h3.heading.skills_heading.center-align {
+  color: white;
+}
+
+i.about_skill_icon {
+  color:white
+}
+
+span.skill_names {
+  color: white;
+}
+
+a.footer_description_link:hover {
+  font-weight: bold;
+  color: white;   
+}
+
+
+span.footer_link_text:hover {
+  text-decoration: underline;
+}
+
+form.email_me {
+  color: white;
 }
