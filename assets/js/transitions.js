@@ -1,3 +1,4 @@
+// standard
 var HideShowTransition = Barba.BaseTransition.extend({
   start: function () {
     this.newContainerLoading.then(this.finish.bind(this));
