@@ -16,7 +16,7 @@ function initializeScripts() {
     e.preventDefault();
 
     $.ajax({
-      url: "https://formspree.io/steveny905@gmail.com",
+      url: "https://formspree.io/r.steveny905@gmail.com",
       method: "POST",
       data: $('.email_me').serialize(),
       dataType: "json"
