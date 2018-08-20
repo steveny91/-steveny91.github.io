@@ -9,14 +9,15 @@ $color4: #8e5572;
 
 $color6: #292929;
 
-$text-color: #eff2ef;
+$text-color: #505c69;
 
-$modal-text: #fcf5c7;
+$modal-text: #505c69;
 
-$dark-blue: #254b84;
-$background-color: #2C3539;
+$dark-blue: #505c69;
+$white: #fff;
+$background-color: #fff;
 
-$cover-color: #254b84;
+$cover-color: #505c69;
 
 @import "glitch", "homepage", "style";
 
@@ -40,7 +41,7 @@ $cover-color: #254b84;
 
 .resume-wrapper {
   button {
-    margin-top: 50px;
+    margin-top: 51px;
   }
 }
 body {
@@ -99,7 +100,7 @@ nav ul li {
   display: block;
   height: 50vh;
   min-height: 300px;
-  color: $text-color;
+  color: $white;
   // font-weight: 600;
   position: relative;
 }
@@ -178,7 +179,7 @@ nav ul li {
 }
 
 .footer_description_link {
-  color: $text_color;
+  color: white;
   font-weight: 300;
   font-style: italic;
   transition: color 0.5s linear;
@@ -202,7 +203,7 @@ nav ul li {
 }
 
 i.material-icons.prefix{
-  color: white;
+  color: #505c69
 }
 
 .about_me_links:hover {
@@ -309,8 +310,8 @@ button {
   width: 100%;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: white;
-  border: 1px white solid !important;
+  color: black;
+  border: 1px black solid !important;
   border-radius: 3px;
   outline: 0;
   overflow: hidden;
@@ -448,16 +449,16 @@ button.fill:hover:before {
 
 /* label color */
 .input-field label {
-  color: white !important;
+  color: #505c69 !important;
 }
 /* label focus color */
 .input-field input:focus + label {
-  color: white !important;
+  color: black !important;
 }
 /* label underline focus color */
 .input-field input:focus {
-  border-bottom: 1px solid white !important;
-  box-shadow: 0 1px 0 0 white !important;
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
 }
 /* valid color */
 .input-field input.valid {
@@ -471,12 +472,12 @@ button.fill:hover:before {
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: white !important;
+  color: black !important;
 }
 textarea:focus {
   outline: none !important;
-  border-bottom: 1px solid white !important;
-  box-shadow: 0 1px 0 0 white !important;
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
 }
 
 nav,
@@ -544,19 +545,19 @@ img.responsive-img.resume-img.z-depth-2.hoverable {
 }
 
 p.quote {
-  color: white;
+  color: black;
 }
 
 p.author.right {
-  color: white;
+  color: black;
 }
 
 .about_paragraph {
-  color: white;
+  color: black;
 }
 
 a.about_me_links {
-  color: white;
+  color: black;
 }
 
 h3.heading.skills_heading.center-align {
@@ -564,11 +565,11 @@ h3.heading.skills_heading.center-align {
 }
 
 i.about_skill_icon {
-  color:white
+  color:black
 }
 
 span.skill_names {
-  color: white;
+  color: black;
 }
 
 a.footer_description_link:hover {
@@ -582,5 +583,157 @@ span.footer_link_text:hover {
 }
 
 form.email_me {
-  color: white;
+  color: black !important;
+}
+
+.brand-logo{
+  font-family: 'Libre Barcode 39', cursive;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+}
+
+
+
+
+p.section-text {
+  color: black;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.tab-text {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.tab-section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.tab-input {
+  display: none;
+}
+
+.tab-label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+.tab-label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+.tab-label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + .tab-label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #555;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .tab-label {
+    font-size: 0;
+  }
+  .tab-label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tab-label {
+    padding: 15px;
+  }
+}
+.tab-wrapper {
+  padding: 0 50 0 50;
+  overflow: hidden;
+}
+
+.tab-section{
+  height: 750px
+}
+
+.tab-label{
+  width: 24.7%;
+}
+
+.box-links{
+  display: none;
+  width: 100%;
+}
+
+a:hover + .box-links,.box-links:hover{
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 993px){
+.container {
+    width: 90%;
+}
+}
+
+.live-previews{
+  margin: 0 auto;
+}
+
+.tab-wrapper {
+  max-width: 1300px;
+  margin: auto
+}
+
+.brookridge-img{
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.brookridge-img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.brookridge-img{
+  width: 32%;
+  min-height: 218px;
+}
+
+img.panman-img {
+  width: 25%;
+  height: 57%;
+  padding: 0 20 0 20;
+}
+
+.pdf-txt-img{
+  width: 32%;
+  max-height:350px;
+}
+
+.panman-wrapper{
+  text-align: center;
 }
