@@ -232,7 +232,7 @@ i {
   text-decoration: underline;
 }
 
-nav.z-depth-0 {background-color: #254b84;}
+nav.z-depth-0 {background-color: #505c69;}
 
 .quote_box.row {
   max-width: 1300px;
@@ -253,7 +253,12 @@ nav.z-depth-0 {background-color: #254b84;}
 
 h4.heading {
   /* table-layout: auto; */
-  border: 1px solid #254b84;
-  background-color: #254b84;
+  border: 1px solid #505c69;
+  background-color: #505c69;
   color: white;
 }
+
+.grow-nav:hover { transform: scale(1.1); }
+
+.grow-nav{ transition: all .2s ease-in-out; }
+
